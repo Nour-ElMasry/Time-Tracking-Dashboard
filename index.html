@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+    <!-- Style Sheet -->
+    <link rel="stylesheet" href="dist/css/style.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <title>Frontend Mentor | Time tracking dashboard</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+        .attribution {
+            position: relative;
+            bottom: 0;
+            background-color: white;
+            font-size: 11px;
+            text-align: center;
+            color: black;
+        }
+        
+        .attribution a {
+            color: hsl(228, 45%, 44%);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="flex">
+        <div class="grid">
+            <div class="grid__user">
+                <div class="userInfo">
+                    <img src="images/image-jeremy.png" alt="">
+                    <p>Report for</p>
+                    <h1>Jeremy Robson</h1>
+                </div>
+                <div class="clickables">
+                    <a class="daily" onclick="display('Daily')">Daily</a>
+                    <a class="weekly" onclick="display('Weekly')">Weekly</a>
+                    <a class="monthly" onclick="display('Monthly')">Monthly</a>
+                </div>
+            </div>
+            <div class="grid__work frame">
+                <div class="backcover container--px">
+                    <img src="images/icon-work.svg" alt="">
+                </div>
+                <div class="mainBox  container--pa">
+                    <h3>Work <span class="iconify" data-icon="entypo:dots-three-horizontal" style="color: hsl(236, 100%, 87%);"></span></h3>
+                    <div class="time">
+                        <h1 class="hrs"><span id="num-cur-work"></span>hrs</h1>
+                        <p>Last Week - <span id="num-prev-work"></span>hrs</p>
+                    </div>
+                </div>
+            </div>
+            <div class="grid__play frame">
+                <div class="backcover container--px"><img src="images/icon-play.svg" alt=""></div>
+                <div class="mainBox  container--pa">
+                    <h3>Play <span class="iconify" data-icon="entypo:dots-three-horizontal" style="color: hsl(236, 100%, 87%);"></span></h3>
+                    <div class="time">
+                        <h1 class="hrs"><span id="num-cur-play"></span>hrs</h1>
+                        <p>Last Week - <span id="num-prev-play"></span>hrs</p>
+                    </div>
+                </div>
+            </div>
+            <div class="grid__study frame">
+                <div class="backcover container--px"><img src="images/icon-study.svg" alt=""></div>
+                <div class="mainBox  container--pa">
+                    <h3>Study <span class="iconify" data-icon="entypo:dots-three-horizontal" style="color: hsl(236, 100%, 87%);"></span></h3>
+                    <div class="time">
+                        <h1 class="hrs"><span id="num-cur-study"></span>hrs</h1>
+                        <p>Last Week - <span id="num-prev-study"></span>hrs</p>
+                    </div>
+                </div>
+            </div>
+            <div class="grid__exercise frame">
+                <div class="backcover container--px"><img src="images/icon-exercise.svg" alt=""></div>
+                <div class="mainBox  container--pa">
+                    <h3>Exercise <span class="iconify" data-icon="entypo:dots-three-horizontal" style="color: hsl(236, 100%, 87%);"></span></h3>
+                    <div class="time">
+                        <h1 class="hrs"><span id="num-cur-ex"></span>hrs</h1>
+                        <p>Last Week - <span id="num-prev-ex"></span>hrs</p>
+                    </div>
+                </div>
+            </div>
+            <div class="grid__social frame">
+                <div class="backcover container--px"><img src="images/icon-social.svg" alt=""></div>
+                <div class="mainBox  container--pa">
+                    <h3>Social <span class="iconify" data-icon="entypo:dots-three-horizontal" style="color: hsl(236, 100%, 87%);"></span></h3>
+                    <div class="time">
+                        <h1 class="hrs"><span id="num-cur-social"></span>hrs</h1>
+                        <p>Last Week - <span id="num-prev-social"></span>hrs</p>
+                    </div>
+                </div>
+            </div>
+            <div class="grid__selfCare frame">
+                <div class="backcover container--px"><img src="images/icon-self-care.svg" alt=""></div>
+                <div class="mainBox  container--pa">
+                    <h3>Self Care <span class="iconify" data-icon="entypo:dots-three-horizontal" style="color: hsl(236, 100%, 87%);"></span></h3>
+                    <div class="time">
+                        <h1 class="hrs"><span id="num-cur-self"></span>hrs</h1>
+                        <p>Last Week - <span id="num-prev-self"></span>hrs</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="#">Elafifi Nour Eldin</a>.
+    </div>
+</body>
+
+<script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script type="text/javascript" src="data.js"></script>
+<script type="text/javascript" src="index.js"></script>
+
+</html>

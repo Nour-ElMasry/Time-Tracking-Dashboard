@@ -1,0 +1,2 @@
+.flex{display:flex;align-items:center;justify-content:center;width:100%;height:100vh;padding:0 10%}.grid{display:grid;grid-template-columns:1fr 1fr 1fr 1fr;grid-template-rows:1fr 1fr;grid-template-areas:"user work play study" "user exercise social selfCare";gap:3.125rem}.grid__user{grid-area:user}.grid__work{grid-area:work}.grid__play{grid-area:play}.grid__study{grid-area:study}.grid__exercise{grid-area:exercise}.grid__social{grid-area:social}.grid__selfCare{grid-area:selfCare}
+/*# sourceMappingURL=main.css.map */

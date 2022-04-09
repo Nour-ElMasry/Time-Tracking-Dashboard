@@ -1,0 +1,46 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.125rem;
+    background-color: $veryDarkBlue;
+    overflow-x: hidden;
+    color: white;
+}
+
+h1,
+h2,
+h3 {
+    margin: 0px;
+    font-weight: 300;
+}
+
+p {
+    margin: 0;
+    color: $DesaturatedBlue;
+}
+
+h3 {
+    display: flex;
+    justify-content: space-between;
+    span {
+        margin-top: 10px;
+    }
+}
+
+.container {
+    &--pa {
+        padding: 2rem;
+    }
+    &--py {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+    &--px {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
