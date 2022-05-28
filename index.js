@@ -15,11 +15,9 @@ $('.daily').click(function() {
     display('Daily');
 });
 $('.weekly').click(function() {
-
     display('Weekly');
 });
 $('.monthly').click(function() {
-
     display('Monthly');
 });
 
